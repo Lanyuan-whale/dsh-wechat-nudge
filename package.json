@@ -1,0 +1,56 @@
+{
+  "name": "dsh-wechat-nudge",
+  "version": "1.0.0",
+  "description": "微信有新消息时，把一条『去看看』的提示投进指定的 DSH 会话。只看本地库的修改时间，不读正文、不发消息。",
+  "license": "MIT",
+  "author": "Blue Yuan (蓝沅)",
+  "type": "module",
+  "main": "lib/host.js",
+  "exports": {
+    ".": "./lib/host.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lanyuan-whale/dsh-wechat-nudge.git"
+  },
+  "homepage": "https://github.com/Lanyuan-whale/dsh-wechat-nudge",
+  "bugs": {
+    "url": "https://github.com/Lanyuan-whale/dsh-wechat-nudge/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "wechat",
+    "notification",
+    "wake",
+    "privacy",
+    "local-data"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "slots"
+      ],
+      "external": [
+        "react"
+      ]
+    }
+  }
+}

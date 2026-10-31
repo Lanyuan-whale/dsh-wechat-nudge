@@ -1,0 +1,6 @@
+# DSH「微信叫醒」
+# 这一行同时激活「宿主半边」和这个包在 package.json 里声明的 dsh.client 网页半边
+# （设置页「微信叫醒」）。id 就是插件 id 与日志前缀，两处要一致。
+- insert:
+    - id: wechat-nudge
+      name: 'dsh-wechat-nudge'
