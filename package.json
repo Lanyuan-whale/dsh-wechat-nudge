@@ -1,7 +1,7 @@
 {
   "name": "dsh-wechat-nudge",
-  "version": "1.0.1",
-  "description": "微信有新消息时，把一条『去看看』的提示投进指定的 DSH 会话。只看本地库的修改时间，不读正文、不发消息。",
+  "version": "1.2.1",
+  "description": "微信有新消息时，把一条『去看看』的提示投进指定的 DSH 会话。只看本地库的修改时间，不读正文、不发消息；群消息只在被 @ 时叫醒，系统消息不叫；可按群／关键词把消息分到不同房间。",
   "license": "MIT",
   "author": "Blue Yuan (蓝沅)",
   "type": "module",
